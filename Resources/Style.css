@@ -1,0 +1,281 @@
+/* Contents
+
+1. Global Rules
+2. Header
+3. Sub-Header
+4. Main
+5. Footer
+__________________
+1. Global Rules */
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    background-image: url(./Images/polkadot\ background.png);
+    background-size: 20rem;
+    min-height: 100%;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1,
+h2 {
+    font-family: 'Mali', cursive;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.red {
+    color: hsl(1 70% 35%);
+}
+
+.yellow {
+    color: hsl(36 70% 35%);
+}
+
+.green {
+    color: hsl(161 70% 30%);
+}
+
+.blue {
+    color: hsl(225 70% 35%);
+}
+
+/* 2. Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+header .container {
+    margin: 0 4%;
+}
+
+header a {
+    font-family: 'Mali', cursive;
+    font-size: 1.5rem;
+    color: black;
+}
+
+header a:hover {
+    font-weight: bold;
+}
+
+header .left,
+header .right {
+    flex: 2;
+}
+
+header .middle {
+    padding: 1rem;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+header .left,
+header .middle,
+header .right {
+    background-color: hsl(206 71% 75%);
+    margin-top: 0;
+}
+
+header .left {
+    text-align: right;
+    border-bottom-left-radius: 40px;
+}
+
+header .middle {
+    text-align: center;
+}
+
+header .right {
+    border-bottom-right-radius: 40px;
+}
+
+header ul {
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%
+}
+
+header .mia_logo {
+    width: 6rem;
+}
+
+/* 3. Sub-Header */
+
+.sub_header {
+    position: relative;
+    top: 7rem;
+    padding: 0;
+}
+
+.sub_header .container {
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: auto 14%;
+}
+
+.sub_header .text_logo {
+    max-width: 25rem;
+    align-self: end;
+    width: 25vw;
+}
+
+.sub_header .slogan {
+    margin: 0;
+    font-size: 2.75vw;
+}
+
+/* 4. Main */
+
+.main {
+    margin: 2% 7%;
+}
+
+.main .anchor {
+    height: 8rem;
+}
+
+.paw {
+    position: absolute;
+    align-self: center;
+}
+
+.paw img {
+    width: 3rem;
+}
+
+.main .container {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main .container div {
+    text-align: center;
+    flex-grow: 1;
+    max-width: fit-content;
+}
+
+.main .thumbnail {
+    width: 20rem;
+}
+
+.main .story .thumbnail {
+    width: 15rem;
+    padding-top: 3.4375rem;
+}
+
+.main .text_logo {
+    width: 20rem;
+    padding-bottom: 3.4375rem;
+}
+
+.top_left,
+.top_right {
+    padding: 2.5rem 2.5rem 0;
+}
+
+.bottom_left,
+.bottom_right {
+    padding: 0 2.5rem 2.5rem;
+}
+
+.top_left {
+    background-color: hsl(1 70% 95% / 80%);
+    border: 1px solid hsl(1 70% 95% / 80%);
+}
+
+.top_left:hover {
+    border: 1px solid hsl(1 70% 50%)
+}
+
+.top_right {
+    background-color: hsl(36 70% 95% / 80%);
+    border: 1px solid hsl(36 70% 95% / 80%);
+}
+
+.top_right:hover {
+    border: 1px solid hsl(36 70% 50%);
+}
+
+.bottom_left {
+    background-color: hsl(161 70% 95% / 80%);
+    border: 1px solid hsl(161 70% 95% / 80%);
+}
+
+.bottom_left:hover {
+    border: 1px solid hsl(161 70% 50%);
+}
+
+.bottom_right {
+    background-color: hsl(225 70% 95% / 80%);
+    border: 1px solid hsl(225 70% 95% / 80%);
+}
+
+.bottom_right:hover {
+    border: 1px solid hsl(225 70% 50%);
+}
+
+/* 5. Footer */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .container {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background-color: hsl(206 71% 75%);
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    height: 4rem;
+    margin: 0 4%;
+}
+
+.footer .left,
+.footer .right {
+    flex: 1;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.icon_list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 10rem;
+}
+
+.icon_list img {
+    width: 1.5rem;
+}
